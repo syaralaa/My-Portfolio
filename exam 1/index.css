@@ -1,0 +1,116 @@
+body, ul, li {
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+  
+  .height-100vh {
+    height:100vh;
+  }
+  
+  .height-100p {
+    height:100%;
+  }
+  
+  .con-min-width {
+    min-width:1200px;
+    /* 임시 코드 */
+    min-width:300px;
+  }
+  
+  .flex {
+    display:flex;
+  }
+  
+  .flex-ai-c {
+    align-items:center;
+  }
+  
+  .flex-jc-c {
+    justify-content:center;
+  }
+  
+  .width-25p {
+    width:25%;
+  }
+  
+  .relative {
+    position:relative;
+  }
+  
+  /* .section-top 시작 */
+  .section-top__wrap {
+    margin-right:100px;
+  }
+  
+  .section-top__content > li {
+    position:relative;
+    z-index:2;
+    color:white;
+    font-weight:bold;
+    font-size:3rem;
+  }
+  
+  .section-top__content > li:not(:last-child) {
+    border-right:1px solid rgba(255,255,255,.5);
+  }
+  
+  .section-top__bg > li {
+    position:absolute;
+    top:0;
+    height:100%;
+    background-size:cover;
+    background-position:center bottom;
+    overflow:hidden;
+  }
+  
+  .section-top__bg > li:nth-child(1) {
+    left:0;
+    right:75%;
+  }
+  
+  .section-top__bg > li:nth-child(2) {
+    left:25%;
+    right:50%;
+  }
+  
+  .section-top__bg > li:nth-child(3) {
+    left:50%;
+    right:25%;
+  }
+  
+  .section-top__bg > li:nth-child(4) {
+    left:75%;
+    right:0;
+  }
+  
+  .section-top__bg > li > div {
+    position:absolute;
+    top:0;
+    bottom:0;
+    opacity:0;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  }
+  
+  .section-top__bg > li.active > div {
+    opacity:1;
+    z-index:1;
+  }
+  
+  .section-top__bg > li:nth-child(1) > div {
+    left:0;
+  }
+  
+  .section-top__bg > li:nth-child(2) > div {
+    left:-100%;
+  }
+  
+  .section-top__bg > li:nth-child(3) > div {
+    left:-200%;
+  }
+  
+  .section-top__bg > li:nth-child(4) > div {
+    left:-300%;
+  }
